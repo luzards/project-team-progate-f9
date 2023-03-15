@@ -207,7 +207,7 @@ header{
   .form-wrapper {
     width: 100%;
     background-color: rgba(77,77,77, 0.8);
-    height: 500px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,7 +230,7 @@ header{
   .form input,
   .form select {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -249,7 +249,7 @@ header{
   }
   
   .lahir-wrapper {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     display: flex;
     align-items: stretch;
   }
@@ -257,6 +257,21 @@ header{
   .lahir-wrapper input {
     width: 100%;
     margin: 0 1px;
+  }
+
+  .daftar {
+    background-color: #fff;
+    box-shadow: 0 7px #b3aeb5;
+  }
+
+  .daftar:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+  .daftar:hover{
+    background-color: #c4c2c5;
   }
   
   /*Body End*/
