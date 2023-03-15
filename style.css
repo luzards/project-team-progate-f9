@@ -1,0 +1,285 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: roboto;
+}
+
+/* Header Start */
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(77,77,77, 0.9);
+    position: fixed;
+    overflow: hidden;
+    align-items: center;
+    z-index: 10;
+}
+
+.header-logo{
+    float: left;
+    margin-left: 60px;
+}
+
+.logo{
+    width: 70px;
+
+}
+
+.header-menu{
+    float: left; 
+    display: block;
+    padding: 10px 50px;
+}
+
+.header-menu a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+.header-menu a:hover{
+    background-color: #ddd;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Header Animation */
+
+@keyframes rotating-logo{
+  from { transform: rotate(0deg);}
+  to {transform: rotate(3turn);}
+}
+
+@keyframes rotating2-logo{
+  from { transform: rotate(360deg);}
+  to {transform: rotate(0deg);}
+}
+
+.header-logo img{
+  animation: rotating-logo 5s 0s infinite linear reverse;
+}
+
+
+/* Header Animation */
+
+/* Header End */
+
+
+/* Main Start */
+  main {
+    background-image: url(image-file/jumbotron.jpg);
+    color: white;
+    text-align: center;
+    padding: 250px 0;
+  }
+  
+  main h2 {
+    font-size: 56px;
+  }
+  
+  main p {
+    padding: 16px 0;
+    font-size: 24px;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+  }
+  
+  .icon-search {
+    width: 13px;
+  }
+
+  .form{
+    width: 80%;
+  }
+  
+  form input,
+  form select,
+  form button {
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  form input {
+    width: 25%;
+  }
+  
+  form select,
+  form button {
+    background-color: #fff;
+  }
+  
+  /* Main End */
+
+
+  /*Body start */
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .lesson-wrapper {
+    text-align:center;
+    background-color:#f7f7f7;
+    margin-bottom: 80px;
+  }
+  .heading{
+    padding-top:60px;
+    padding-bottom:30px;
+    color:#5f5d60;
+  }
+  .heading h2{
+    font-weight:normal;
+  }
+  .lessons {
+    display:flex;
+  }
+  .clear{
+    clear:flex;
+  }
+  .lesson {
+    border-radius: 20px;
+    margin :10px 10px;
+    width: 25%;
+    transition: transform .2s;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 7px #b3aeb5;
+  }
+  .lesson:hover{
+    transform: scale(1.1);
+  }
+  .lesson:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  .lesson img{
+    height:50%;
+    width:50%;
+    padding :30px 10px;
+  }
+  .title p {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .text-contents {
+    width:80%;
+    margin-top:20px;
+    font-size: 15px;
+    color: #503bc2;
+    display:inline-block;
+  }
+  .day {
+    margin-top: 20px;
+    margin-bottom:10px;
+    width: 100%;
+    color: #b3aeb5;
+  }
+  /*Body End*/
+
+
+  /*Form Start*/
+
+  
+  .form-wrapper {
+    width: 100%;
+    background-color: rgba(77,77,77, 0.8);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-wrapper h3 {
+    font-size: 56px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .form {
+    width: 40%;
+    margin-top: 15px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .form input,
+  .form select {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    justify-content: center;
+  }
+  
+  .title-lahir {
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .warning {
+    text-align: left;
+    font-size: 10px;
+    color: #fff; 
+  }
+  
+  .lahir-wrapper {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .lahir-wrapper input {
+    width: 100%;
+    margin: 0 1px;
+  }
+  
+  /*Body End*/
+
+  /*Footer Start*/
+  .footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 75px;
+    color: gray;
+    text-align: center;
+    background-color: rgba(241, 240, 240, 0.8)
+}
+
+.footer span{
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer-span {
+    border-right: 1px solid gray;
+    padding-right: 100px;
+    margin-right: 100px;
+}
+  /*Footer End*/
